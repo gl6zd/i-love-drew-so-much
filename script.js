@@ -51,21 +51,21 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
+  if (button.textContent === "click dis :3 ❤") {
     button.textContent = "loading...";
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "Check your email 😳";
         } else {
           console.error('Failed to send email');
-          button.textContent = "Error 😞";
+          button.textContent = "if this appears I fucked it up";
         }
       })
       .catch(error => {
         // Handle network errors or other issues
-        console.error('Error:', error);
-        button.textContent = "Error 😞";
+        console.error('if this appears I fucked it up', error);
+        button.textContent = "if this appears I fucked it up";
       });
   }
 });
